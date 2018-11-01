@@ -1478,3 +1478,86 @@ urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certifica
 10/28/2018 12:07:39 AM, getPoster() method is called
 10/28/2018 12:07:39 AM, Poster's name: Iron Man
 10/28/2018 12:07:39 AM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg
+10/31/2018 07:37:19 PM, lab6.log opens. Program starts.
+10/31/2018 07:37:19 PM, getPoster() method is called
+10/31/2018 07:37:19 PM, Poster's name: Avatar
+10/31/2018 07:37:19 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg
+10/31/2018 07:37:19 PM, getPoster() method is called
+10/31/2018 07:37:19 PM, Poster's name: Clerks
+10/31/2018 07:37:19 PM, Poster's URL https://ia.media-imdb.com/images/M/MV5BNzE1Njk0NmItNDhlMC00ZmFlLWI4ZTUtYTY4ZjgzNjkyMTU1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg
+10/31/2018 07:37:19 PM, getPoster() method is called
+10/31/2018 07:37:19 PM, Poster's name: Gladiator
+10/31/2018 07:37:19 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg
+10/31/2018 07:37:19 PM, getPoster() method is called
+10/31/2018 07:37:19 PM, Poster's name: Iron Man
+10/31/2018 07:37:19 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg
+10/31/2018 07:39:16 PM, lab6.log opens. Program starts.
+10/31/2018 07:39:16 PM, getPoster() method is called
+10/31/2018 07:39:16 PM, Poster's name: Avatar
+10/31/2018 07:39:16 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg
+10/31/2018 07:39:16 PM, getPoster() method is called
+10/31/2018 07:39:16 PM, Poster's name: Clerks
+10/31/2018 07:39:16 PM, Poster's URL https://ia.media-imdb.com/images/M/MV5BNzE1Njk0NmItNDhlMC00ZmFlLWI4ZTUtYTY4ZjgzNjkyMTU1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg
+10/31/2018 07:39:16 PM, getPoster() method is called
+10/31/2018 07:39:16 PM, Poster's name: Gladiator
+10/31/2018 07:39:16 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg
+10/31/2018 07:39:17 PM, getPoster() method is called
+10/31/2018 07:39:17 PM, Poster's name: Iron Man
+10/31/2018 07:39:17 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg
+10/31/2018 07:42:56 PM, lab6.log opens. Program starts.
+10/31/2018 07:42:56 PM, getPoster() method is called
+10/31/2018 07:42:56 PM, Poster's name: Avatar
+10/31/2018 07:42:56 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg
+10/31/2018 07:42:56 PM, getPoster() method is called
+10/31/2018 07:42:56 PM, Poster's name: Clerks
+10/31/2018 07:42:56 PM, Poster's URL https://ia.media-imdb.com/images/M/MV5BNzE1Njk0NmItNDhlMC00ZmFlLWI4ZTUtYTY4ZjgzNjkyMTU1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg
+10/31/2018 07:42:56 PM, getPoster() method is called
+10/31/2018 07:42:56 PM, Poster's name: Gladiator
+10/31/2018 07:42:56 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg
+10/31/2018 07:42:57 PM, getPoster() method is called
+10/31/2018 07:42:57 PM, Poster's name: Iron Man
+10/31/2018 07:42:57 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg
+10/31/2018 07:43:47 PM, lab6.log opens. Program starts.
+10/31/2018 07:43:47 PM, getPoster() method is called
+10/31/2018 07:43:47 PM, Poster's name: Avatar
+10/31/2018 07:43:47 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg
+10/31/2018 07:43:47 PM,*** tb_lineno: 45
+10/31/2018 07:43:47 PM, getPoster() method is called
+10/31/2018 07:43:47 PM, Poster's name: Clerks
+10/31/2018 07:43:47 PM, Poster's URL https://ia.media-imdb.com/images/M/MV5BNzE1Njk0NmItNDhlMC00ZmFlLWI4ZTUtYTY4ZjgzNjkyMTU1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg
+10/31/2018 07:43:47 PM,*** tb_lineno: 45
+10/31/2018 07:43:47 PM, getPoster() method is called
+10/31/2018 07:43:47 PM, Poster's name: Gladiator
+10/31/2018 07:43:47 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg
+10/31/2018 07:43:47 PM,*** tb_lineno: 45
+10/31/2018 07:43:47 PM, getPoster() method is called
+10/31/2018 07:43:47 PM, Poster's name: Iron Man
+10/31/2018 07:43:47 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg
+10/31/2018 07:43:47 PM,*** tb_lineno: 45
+10/31/2018 07:44:15 PM, lab6.log opens. Program starts.
+10/31/2018 07:44:15 PM, getPoster() method is called
+10/31/2018 07:44:15 PM, Poster's name: Avatar
+10/31/2018 07:44:15 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg
+10/31/2018 07:44:15 PM, getPoster() method is called
+10/31/2018 07:44:15 PM, Poster's name: Clerks
+10/31/2018 07:44:15 PM, Poster's URL https://ia.media-imdb.com/images/M/MV5BNzE1Njk0NmItNDhlMC00ZmFlLWI4ZTUtYTY4ZjgzNjkyMTU1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg
+10/31/2018 07:44:15 PM, getPoster() method is called
+10/31/2018 07:44:15 PM, Poster's name: Gladiator
+10/31/2018 07:44:15 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg
+10/31/2018 07:44:15 PM, getPoster() method is called
+10/31/2018 07:44:15 PM, Poster's name: Iron Man
+10/31/2018 07:44:15 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg
+10/31/2018 07:44:19 PM, lab6.log opens. Program starts.
+10/31/2018 07:44:19 PM, Successfully created the directory Posters 
+10/31/2018 07:44:19 PM, getPoster() method is called
+10/31/2018 07:44:19 PM, Poster's name: Avatar
+10/31/2018 07:44:19 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg
+10/31/2018 07:44:19 PM, getPoster() method is called
+10/31/2018 07:44:19 PM, Poster's name: Clerks
+10/31/2018 07:44:19 PM, Poster's URL https://ia.media-imdb.com/images/M/MV5BNzE1Njk0NmItNDhlMC00ZmFlLWI4ZTUtYTY4ZjgzNjkyMTU1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg
+10/31/2018 07:44:20 PM, getPoster() method is called
+10/31/2018 07:44:20 PM, Poster's name: Gladiator
+10/31/2018 07:44:20 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg
+10/31/2018 07:44:20 PM, getPoster() method is called
+10/31/2018 07:44:20 PM, Poster's name: Iron Man
+10/31/2018 07:44:20 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg

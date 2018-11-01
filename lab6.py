@@ -1,19 +1,20 @@
-import OpenMovie
+# import OpenMovie
 import configparser
 import json
 import logging
 import sys
+import PyQt5
+import UI
 
 """
-File: Jeng_Winnie_Lab4.py
+File: Jeng_Winnie_Lab6.py
 
 Author: Winnie Wei Jeng
-Assignment: Lab 1
+Assignment: Lab 6
 Professor: Phil Tracton
-Date: 10/20/2018
+Date: 
 
-This program demonstrate using multiple libraries to open up JSON file 
-that contains URLs of movie poster images and movie titles
+
 
 """
 
@@ -42,21 +43,36 @@ if __name__ == "__main__":
                         format='%(asctime)s,%(message)s',
                         datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    # create a logging instance using log_file_name
+    # create a logging instance using log_file_name and log that program starts
     logging.info(" %s opens. Program starts." % log_file_name)
 
-    # read the ”movies.json” file and load its data
+    # contents is a json file instance that reads ”movies.json” file and loads its data
     try:
         contents = open('movies.json', 'r')
     except:
         print("Failed to open JSON file")
-        logging.error("Failed to open JSON file")
+        logging.error(" Failed to open JSON file")
         sys.exit()
 
-    # get a dictionary from the ”movie posters” field of the json data named data
+    # app is a PyQT5 QApplication instance
+    app = PyQt5.QtWidgets.QApplication(sys.argv)
+
+    # gui is an instance of UI that takes in a json instance named contents
+    gui = UI(contents)
+
+    # start the gui
+    logging.INFO(" GUI starts!")
+    gui.show()
+    app.exec_()
+    logging.INFO(" GUI ends!")
+
+    # log that
+
+    """The rest below is not relevant to lab 6"""
+    # data is a dictionary loaded from the ”movie posters” field
     data = json.load(contents)
 
-    # test code to print out the data dictionary of json objects
+    """test code to print out the data dictionary of json objects """
     # print(data['movie_posters'])
     # for i in data['movie_posters']:
     #     print(i, data['movie_posters'][i])
@@ -68,6 +84,6 @@ if __name__ == "__main__":
     for i in data['movie_posters']:
         instance = OpenMovie.OpenMovie(i, data['movie_posters'][i])
         instance.getPoster()
-        # del instance
+        del instance
 
     contents.close()
