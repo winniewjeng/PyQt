@@ -28,8 +28,8 @@ class UI_MovieInfo(PyQt5.QtWidgets.QDialog):
 
         self.hBox.addWidget(self.infoLabel)
         self.hBox.addWidget(self.titleLabel)
-        # self.hBox.addWidget(self.infoLabel)
-        # self.hBox.addWidget(self.titleLabel)
+
+        # set the layout
         self.setLayout(self.hBox)
 
     def getLayout(self):  # (d)
@@ -39,6 +39,5 @@ class UI_MovieInfo(PyQt5.QtWidgets.QDialog):
 if __name__ == "__main__":
     app = PyQt5.QtWidgets.QApplication(sys.argv)
     gui = UI_MovieInfo()
-    gui.title = "hi"
     gui.show()
     app.exec_()

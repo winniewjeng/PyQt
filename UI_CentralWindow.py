@@ -50,51 +50,53 @@ class UI_CentralWindow(PyQt5.QtWidgets.QDialog):
         self.actorInformation = UI_MovieInfo.UI_MovieInfo(title="Actor:")
         self.releaseDateInformation = UI_MovieInfo.UI_MovieInfo(title="Release Date:")
 
-        self.budgetInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Budget:")  # 7-(c)-xiii-A
-        self.revenueInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Revenue:")
-        self.runTimeInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Run Time:")
+        self.budgetInformation = UI_MovieInfo.UI_MovieInfo(title="Budget:")  # 7-(c)-xiii-A
+        self.revenueInformation = UI_MovieInfo.UI_MovieInfo(title="Revenue:")
+        self.runTimeInformation = UI_MovieInfo.UI_MovieInfo(title="Run Time:")
 
-        self.voteCountInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Vote Count:")
-        self.voteAverageInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Vote Average:")
-        self.statusInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Status:")
+        self.voteCountInformation = UI_MovieInfo.UI_MovieInfo(title="Vote Count:")
+        self.voteAverageInformation = UI_MovieInfo.UI_MovieInfo(title="Vote Average:")
+        self.statusInformation = UI_MovieInfo.UI_MovieInfo(title="Status:")
 
-        self.monthlyRevenueMeanInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Monthly Revenue Mean:")
-        self.monthlyRevenueMedianInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Monthly Revenue Median:")
-        self.monthlyRevenueStdInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Monthly Revenue STD:")
+        self.monthlyRevenueMeanInformation = UI_MovieInfo.UI_MovieInfo(title="Monthly Revenue Mean:")
+        self.monthlyRevenueMedianInformation = UI_MovieInfo.UI_MovieInfo(title="Monthly Revenue Median:")
+        self.monthlyRevenueStdInformation = UI_MovieInfo.UI_MovieInfo(title="Monthly Revenue STD:")
 
-        self.annualRevenueMeanInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Annual Revenue Mean:")
-        self.annualRevenueMedianInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Annual Revenue Median:")
-        self.annualRevenueStdInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Annual Revenue STD:")
+        self.annualRevenueMeanInformation = UI_MovieInfo.UI_MovieInfo(title="Annual Revenue Mean:")
+        self.annualRevenueMedianInformation = UI_MovieInfo.UI_MovieInfo(title="Annual Revenue Median:")
+        self.annualRevenueStdInformation = UI_MovieInfo.UI_MovieInfo(title="Annual Revenue STD:")
 
         # add to hboxSearch, using addWidget() method, the three QMethods we declared at the top of the class:
         #  a label, a line edit, and a button
-        self.hboxSearch.addWidget(self.enterMovieLabel, self.enterMovieLineEdit, self.enterMoviePushButton)
+        self.hboxSearch.addWidget(self.enterMovieLabel)
+        self.hboxSearch.addWidget(self.enterMovieLineEdit)
+        self.hboxSearch.addWidget(self.enterMoviePushButton)
 
         # ? 7.(C)-xv
         # add to hboxInfo1, using getLayout() method, three of the 15 UI_Movie instances
-        UI_MovieInfo.UI_MovieInfo.getLayout(self.hboxInfo1.addLayout(self.directorInformation))
-        UI_MovieInfo.UI_MovieInfo.getLayout(self.hboxInfo1.addLayout(self.actorInformation))
-        UI_MovieInfo.UI_MovieInfo.getLayout(self.hboxInfo1.addLayout(self.releaseDateInformation))
+        self.hboxInfo1.addLayout(self.directorInformation.getLayout())
+        self.hboxInfo1.addLayout(self.actorInformation.getLayout())
+        self.hboxInfo1.addLayout(self.releaseDateInformation.getLayout())
 
         # likewise, add to hboxInfo2
-        UI_MovieInfo.UI_MovieInfo.getLayout(self.hboxInfo2.addLayout(self.budgetInformation))
-        UI_MovieInfo.UI_MovieInfo.getLayout(self.hboxInfo2.addLayout(self.revenueInformation))
-        UI_MovieInfo.UI_MovieInfo.getLayout(self.hboxInfo2.addLayout(self.runTimeInformation))
+        self.hboxInfo1.addLayout(self.budgetInformation.getLayout())
+        self.hboxInfo1.addLayout(self.revenueInformation.getLayout())
+        self.hboxInfo1.addLayout(self.runTimeInformation.getLayout())
 
         # likewise, add to hboxInfo3
-        UI_MovieInfo.UI_MovieInfo.getLayout(self.hboxInfo3.addLayout(self.voteCountInformation))
-        UI_MovieInfo.UI_MovieInfo.getLayout(self.hboxInfo3.addLayout(self.voteAverageInformation))
-        UI_MovieInfo.UI_MovieInfo.getLayout(self.hboxInfo3.addLayout(self.statusInformation))
+        self.hboxInfo1.addLayout(self.voteCountInformation.getLayout())
+        self.hboxInfo1.addLayout(self.voteAverageInformation.getLayout())
+        self.hboxInfo1.addLayout(self.statusInformation.getLayout())
 
         # likewise, add to hboxInfo4
-        UI_MovieInfo.UI_MovieInfo.getLayout(self.hboxInfo4.addLayout(self.monthlyRevenueMeanInformation))
-        UI_MovieInfo.UI_MovieInfo.getLayout(self.hboxInfo4.addLayout(self.monthlyRevenueMedianInformation))
-        UI_MovieInfo.UI_MovieInfo.getLayout(self.hboxInfo4.addLayout(self.monthlyRevenueStdInformation))
+        self.hboxInfo1.addLayout(self.monthlyRevenueMeanInformation.getLayout())
+        self.hboxInfo1.addLayout(self.monthlyRevenueMedianInformation.getLayout())
+        self.hboxInfo1.addLayout(self.monthlyRevenueMeanInformation.getLayout())
 
         # likewise, add to hboxInfo5
-        UI_MovieInfo.UI_MovieInfo.getLayout(self.hboxInfo5.addLayout(self.annualRevenueMeanInformation))
-        UI_MovieInfo.UI_MovieInfo.getLayout(self.hboxInfo5.addLayout(self.annualRevenueMedianInformation))
-        UI_MovieInfo.UI_MovieInfo.getLayout(self.hboxInfo5.addLayout(self.annualRevenueStdInformation))
+        self.hboxInfo1.addLayout(self.annualRevenueMeanInformation.getLayout())
+        self.hboxInfo1.addLayout(self.annualRevenueMedianInformation.getLayout())
+        self.hboxInfo1.addLayout(self.annualRevenueStdInformation.getLayout())
 
         # for vboxInfo, use addLayout() method to add in hboxInfo 1-5
         self.vboxInfo.addLayout(self.hboxInfo1)
@@ -117,6 +119,7 @@ class UI_CentralWindow(PyQt5.QtWidgets.QDialog):
 
         # setLayout to vbox
         self.setLayout(self.vbox)
+        self.setLayout(self.vboxInfo)
 
     # 7-(d)
     def updatePoster(self, posterFileName=None):
@@ -129,5 +132,12 @@ class UI_CentralWindow(PyQt5.QtWidgets.QDialog):
         self.posterLabel.setPixmap(self.pixmap) # what does it even mean dude?
         # for posterLabel, set scaled content to false
         self.posterLabel.setScaledContents(False)
+
+
+if __name__ == "__main__":
+    app = PyQt5.QtWidgets.QApplication(sys.argv)
+    gui = UI_CentralWindow()
+    gui.show()
+    app.exec_()
 
 
