@@ -1,9 +1,10 @@
-# import OpenMovie
+import OpenMovie
 import configparser
 import json
 import logging
 import sys
 import PyQt5
+import PyQt5.QtWidgets
 import UI
 
 """
@@ -56,9 +57,8 @@ if __name__ == "__main__":
 
     # app is a PyQT5 QApplication instance
     app = PyQt5.QtWidgets.QApplication(sys.argv)
-
     # gui is an instance of UI that takes in a json instance named contents
-    gui = UI(contents)
+    gui = UI.UI(contents)
 
     # start the gui
     logging.INFO(" GUI starts!")
@@ -66,10 +66,9 @@ if __name__ == "__main__":
     app.exec_()
     logging.INFO(" GUI ends!")
 
-    # log that
 
     """The rest below is not relevant to lab 6"""
-    # data is a dictionary loaded from the ”movie posters” field
+    # data is a dictionary loaded from the ”movie_posters” field of json data
     data = json.load(contents)
 
     """test code to print out the data dictionary of json objects """
@@ -77,10 +76,9 @@ if __name__ == "__main__":
     # for i in data['movie_posters']:
     #     print(i, data['movie_posters'][i])
 
-    # for each item in this dictionary,
-    # a. create an instance of OpenMovie using the key for the title and the value for the posterURL
-    # b. call the getPoster method of this instance of OpenMovie
-    # c. delete this instance of OpenMovie
+    # for each item in this dictionary, create an instance of OpenMovie,
+    #  using the key for the title and the value for the posterURL call the getPoster method
+    #  of this instance of OpenMovie and then delete this instance of OpenMovie
     for i in data['movie_posters']:
         instance = OpenMovie.OpenMovie(i, data['movie_posters'][i])
         instance.getPoster()

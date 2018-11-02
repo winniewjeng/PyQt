@@ -1,8 +1,9 @@
 import PyQt5
 import PyQt5.QtWidgets
-import PyQt5.QtGui
+import PyQt5.QtGui  # !? I think I need this ?!
 
 
+# 6.
 class UI_MovieInfo(PyQt5.QtWidgets.QDialog):
     """
     this level holds together a few GUI elements
@@ -10,19 +11,19 @@ class UI_MovieInfo(PyQt5.QtWidgets.QDialog):
     """
 
     def __init__(self, parent=None, title=None):
-        super(UI_MovieInfo, self).__init__(parent, title) # call super on the base class. What is base class?
+        super(UI_MovieInfo, self).__init__(parent, title)
 
-        titleLabel = PyQt5.QtWidgets.QLabel(title)
-        titleLabelFont = PyQt5.QtGui.QFont()
-        titleLabelFont.setBold(True)
-        titleLabelFont.setFont(titleLabel) # ? 6.(C)-vi--set BOLD font
+        self.hBox = PyQt5.QtWidgets.QHBoxLayout()  # 6-(c)-iii
 
-        infoLabel = PyQt5.QtWidgets.QLabel("info")
+        self.titleLabel = PyQt5.QtWidgets.QLabel(title)  # iv
+        self.titleLabelFont = PyQt5.QtGui.QFont()  # v
+        self.titleLabelFont.setBold(True)  # v
+        self.titleLabelFont.setFont(self.titleLabel)  # ? 6.(C)-vi--set BOLD font
 
-        hBox = PyQt5.QtWidgets.QHBoxLayout()
-        hBox.addLayout(titleLabel)
-        hBox.addLayout(infoLabel)
+        self.infoLabel = PyQt5.QtWidgets.QLabel("info")  # vii
 
-    def getLayout(self):
-        return self.HBoxLayout
+        self.hBox.addLayout(self.titleLabel)
+        self.hBox.addLayout(self.infoLabel)
 
+    def getLayout(self):  # (d)
+        return self.hBox
