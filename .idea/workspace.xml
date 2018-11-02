@@ -23,12 +23,7 @@
       <change beforePath="$PROJECT_DIR$/../../C++/Reservation Project" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/Reservation Project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/VectorClass" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/VectorClass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C++/pointerExercise/deleteRepeat" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/pointerExercise/deleteRepeat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UI_CentralWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI_CentralWindow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UI_MovieInfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/UI_MovieInfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6.log" beforeDir="false" afterPath="$PROJECT_DIR$/lab6.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab6.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab6.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,14 +61,14 @@
         <counts>
           <entry key="cfg" value="1" />
           <entry key="log" value="1" />
-          <entry key="py" value="8708" />
+          <entry key="py" value="8934" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Log" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="8708" />
+          <entry key="Python" value="8934" />
         </counts>
       </usages-collector>
     </session>
@@ -131,11 +126,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UI_MovieInfo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+            <state relative-caret-position="135">
+              <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
-                <marker date="1541197705163" expanded="true" signature="144:149" ph="..." />
+                <marker date="1541201409160" expanded="true" signature="144:149" ph="..." />
               </folding>
             </state>
           </provider>
@@ -228,8 +223,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="10" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
+    <option name="width" value="774" />
     <option name="height" value="805" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -359,10 +355,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="805" extended-state="0" />
+    <frame x="10" y="23" width="774" height="805" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.012160229" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.023224045" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -488,11 +484,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UI_MovieInfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="135">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <marker date="1541197705163" expanded="true" signature="144:149" ph="..." />
+            <marker date="1541201409160" expanded="true" signature="144:149" ph="..." />
           </folding>
         </state>
       </provider>

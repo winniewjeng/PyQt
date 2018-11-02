@@ -16,18 +16,21 @@ class UI_MovieInfo(PyQt5.QtWidgets.QDialog):
         self.title = title
         self.hBox = PyQt5.QtWidgets.QHBoxLayout()  # 6-(c)-iii
 
-        self.titleLabel = PyQt5.QtWidgets.QLabel(self.title)  # iv
+        # make a title label
+        self.titleLabel = PyQt5.QtWidgets.QLabel(self.title, self)  # iv
+        # customize the label font
         self.titleLabelFont = PyQt5.QtGui.QFont()  # v
         self.titleLabelFont.setBold(True)  # v
         self.titleLabel.setFont(self.titleLabelFont)  # ? 6.(C)-vi--set BOLD font
-        # self.titleLabelFont.setFont(self.titleLabel)
 
-        self.infoLabel = PyQt5.QtWidgets.QLabel("info")  # vii
+        # make an info label
+        self.infoLabel = PyQt5.QtWidgets.QLabel("info", self)  # vii
 
         self.hBox.addWidget(self.infoLabel)
-        # self.hBox.addLayout(self.titleLabel)
         self.hBox.addWidget(self.titleLabel)
-        # self.hBox.addLayout(self.infoLabel)
+        # self.hBox.addWidget(self.infoLabel)
+        # self.hBox.addWidget(self.titleLabel)
+        self.setLayout(self.hBox)
 
     def getLayout(self):  # (d)
         return self.hBox
@@ -36,5 +39,6 @@ class UI_MovieInfo(PyQt5.QtWidgets.QDialog):
 if __name__ == "__main__":
     app = PyQt5.QtWidgets.QApplication(sys.argv)
     gui = UI_MovieInfo()
+    gui.title = "hi"
     gui.show()
     app.exec_()
