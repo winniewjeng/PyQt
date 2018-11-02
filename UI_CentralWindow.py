@@ -44,12 +44,13 @@ class UI_CentralWindow(PyQt5.QtWidgets.QDialog):
         self.hboxInfo4 = PyQt5.QtWidgets.QHBoxLayout()
         self.hboxInfo5 = PyQt5.QtWidgets.QHBoxLayout()
 
-        # create 15 UI_MovieInfo instances
-        self.directorInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Director:")
-        self.actorInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Actor:")
-        self.releaseDateInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Release Date:")
+        # create 15 UI_MovieInfo instances in UI_CentralWindow class 7-(c)-xiii-A
+        # self.directorInformation = UI_MovieInfo.UI_MovieInfo.infoLabel("Director")  # 7-(c)-xiii-A
+        self.directorInformation = UI_MovieInfo.UI_MovieInfo(title="Director:")  # 7-(c)-xiii-A
+        self.actorInformation = UI_MovieInfo.UI_MovieInfo(title="Actor:")
+        self.releaseDateInformation = UI_MovieInfo.UI_MovieInfo(title="Release Date:")
 
-        self.budgetInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Budget:")
+        self.budgetInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Budget:")  # 7-(c)-xiii-A
         self.revenueInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Revenue:")
         self.runTimeInformation = UI_MovieInfo.UI_MovieInfo(self.parent, "Run Time:")
 

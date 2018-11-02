@@ -1,9 +1,10 @@
 import OpenMovie
+# from OpenMovie import *
 import configparser
 import logging
 import sys
 import json
-import PyQt5
+# import PyQt5
 import PyQt5.QtWidgets
 import UI
 
@@ -56,7 +57,12 @@ if __name__ == "__main__":
     # app is a PyQT5 QApplication instance
     app = PyQt5.QtWidgets.QApplication(sys.argv)
     # gui is an instance of UI that takes in the json instance named contents
-    gui = UI.UI(contents, None)  # 5.(g)
+    # gui = UI.UI(moviesJSON=contents)  # 5.(g)
+    # gui = UI.UI(contents)  # 5.(g)
+    # gui = UI.UI.moviesJSON(contents)
+    # UI.UI.moviesJSON = contents
+
+    gui = UI.UI(contents)
     # start the gui
     logging.INFO(" GUI starts!")
     gui.show()
@@ -81,3 +87,4 @@ if __name__ == "__main__":
         del instance
 
     contents.close()
+

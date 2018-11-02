@@ -17,17 +17,21 @@ class UI(PyQt5.QtWidgets.QMainWindow):
     def __init__(self, moviesJSON=None, parent=None):
         # moviesJSON in the JSON instance from lab6.py
 
-        super(UI, self).__init__(moviesJSON, parent)  # moviesJSON?
+        super(UI, self).__init__(parent)  # moviesJSON?
         # store the input moviesJSON in a class member of the same name
         self.moviesJSON = moviesJSON
         # set the window title
         self.setWindowTitle("Python Movie Project")
         # set the status bar's message
-        self.setStatusBar(QStatusBar="Status Bar")  # ? 8-(d)-4
+        self.statusBar().showMessage("Status Bar")  # ? 8-(d)-4
+        # self.a = PyQt5.QtWidgets.QStatusBar.showMessage("StatusBar")
+        # self.setStatusBar(QStatusBar=PyQt5.QtWidgets.QStatusBar.showMessage("StatusBar"))
+        # self.setStatusBar(PyQt5.QtWidgets.QStatusBar.showMessage("Status Bar"))
+        # self.setStatusBar(QStatusBar)  # ? 8-(d)-4
 
         # 8-(d)-v
         # class member centralWidget is an instance of UI_CentralWindow
-        # this instance actually feels more important that previously assumed. Is it not being used?
+        # this instance....cause the Debugger to complain...
         self.centralWidget = UI_CentralWindow.UI_CentralWindow()
 
         """connect the PushButton from our central widget to a handler"""
@@ -74,6 +78,12 @@ class UI(PyQt5.QtWidgets.QMainWindow):
                 return
 
         contents.close()
+
+if __name__ == "__main__":
+    app = PyQt5.QtWidgets.QApplication(sys.argv)
+    gui = UI()
+    gui.show()
+    app.exec_()
 
 
 
