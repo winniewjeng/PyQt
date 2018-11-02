@@ -1561,3 +1561,27 @@ urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certifica
 10/31/2018 07:44:20 PM, getPoster() method is called
 10/31/2018 07:44:20 PM, Poster's name: Iron Man
 10/31/2018 07:44:20 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg
+11/01/2018 11:46:22 PM, lab6.log opens. Program starts.
+11/01/2018 11:48:50 PM, lab6.log opens. Program starts.
+11/01/2018 11:50:13 PM, lab6.log opens. Program starts.
+11/01/2018 11:50:56 PM, lab6.log opens. Program starts.
+11/01/2018 11:53:10 PM, lab6.log opens. Program starts.
+11/01/2018 11:53:47 PM, lab6.log opens. Program starts.
+11/01/2018 11:56:44 PM, lab6.log opens. Program starts.
+11/02/2018 12:05:01 AM, lab6.log opens. Program starts.
+11/02/2018 12:05:01 AM, Failed to open JSON file
+11/02/2018 12:05:49 AM, lab6.log opens. Program starts.
+11/02/2018 12:05:49 AM, Failed to open JSON file
+11/02/2018 12:08:18 AM, lab6.log opens. Program starts.
+11/02/2018 12:08:18 AM, Failed to open JSON file
+11/02/2018 12:09:55 AM, lab6.log opens. Program starts.
+11/02/2018 12:09:55 AM, Failed to open JSON file
+11/02/2018 12:11:46 AM, lab6.log opens. Program starts.
+11/02/2018 12:14:21 AM, lab6.log opens. Program starts.
+11/02/2018 11:02:09 AM, lab6.log opens. Program starts.
+11/02/2018 11:03:19 AM, lab6.log opens. Program starts.
+11/02/2018 11:03:19 AM, Opened the JSON file!
+11/02/2018 11:19:19 AM, lab6.log opens. Program starts.
+11/02/2018 11:19:19 AM, Opened the JSON file!
+11/02/2018 11:24:56 AM, lab6.log opens. Program starts.
+11/02/2018 11:24:56 AM, Opened the JSON file!

@@ -3,7 +3,7 @@ import PyQt5.QtWidgets
 import PyQt5.QtGui  # !? I think I need this ?!
 
 
-# 6.
+# 6
 class UI_MovieInfo(PyQt5.QtWidgets.QDialog):
     """
     this level holds together a few GUI elements

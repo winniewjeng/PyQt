@@ -3,6 +3,7 @@ import PyQt5.QtWidgets
 import PyQt5.QtGui  # !? I need this
 import PyQt5.QtCore  # !? I need this
 import UI_MovieInfo
+import sys
 
 
 # 7. no logic done here
@@ -127,7 +128,5 @@ class UI_CentralWindow(PyQt5.QtWidgets.QDialog):
         self.posterLabel.setPixmap(self.pixmap) # what does it even mean dude?
         # for posterLabel, set scaled content to false
         self.posterLabel.setScaledContents(False)
-
-
 
 

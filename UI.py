@@ -17,7 +17,7 @@ class UI(PyQt5.QtWidgets.QMainWindow):
     def __init__(self, moviesJSON=None, parent=None):
         # moviesJSON in the JSON instance from lab6.py
 
-        super(UI, self).__init__(moviesJSON, parent)
+        super(UI, self).__init__(moviesJSON, parent)  # moviesJSON?
         # store the input moviesJSON in a class member of the same name
         self.moviesJSON = moviesJSON
         # set the window title

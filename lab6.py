@@ -1,8 +1,8 @@
 import OpenMovie
 import configparser
-import json
 import logging
 import sys
+import json
 import PyQt5
 import PyQt5.QtWidgets
 import UI
@@ -15,12 +15,9 @@ Assignment: Lab 6
 Professor: Phil Tracton
 Date: 
 
-
-
 """
 
 if __name__ == "__main__":
-
     try:
         config = configparser.RawConfigParser()
         # read in the "movie.cfg" file
@@ -30,42 +27,41 @@ if __name__ == "__main__":
         logging.error("Config fail")
         sys.exit()
 
-    # if the configuration has a section named ”LOGGING”,
-    # read the LOG_FILE field of it and store the name in log_file_name
-    # else set log file name to ”default.log”
+        # if the configuration has a section named ”LOGGING”,
+        # read the LOG_FILE field of it and store the name in log_file_name
+        # else set log file name to ”default.log”
     if config.has_section('LOGGING'):
         log_file_name = config.get('LOGGING', 'log_file')
 
     else:
         log_file_name = "default.log"
 
-    # create a logging basiConfig
+        # create a logging basiConfig
     logging.basicConfig(filename=log_file_name, level=logging.DEBUG,
                         format='%(asctime)s,%(message)s',
                         datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    # create a logging instance using log_file_name and log that program starts
+    # create a logging instance using log_file_name
     logging.info(" %s opens. Program starts." % log_file_name)
 
-    # contents is a json file instance that reads ”movies.json” file and loads its data
     try:
         contents = open('movies.json', 'r')
+        print(" Opened the JSON file!")
+        logging.info(" Opened the JSON file!")
     except:
         print("Failed to open JSON file")
-        logging.error(" Failed to open JSON file")
+        logging.error("Failed to open JSON file")
         sys.exit()
 
     # app is a PyQT5 QApplication instance
     app = PyQt5.QtWidgets.QApplication(sys.argv)
-    # gui is an instance of UI that takes in a json instance named contents
-    gui = UI.UI(contents)
-
+    # gui is an instance of UI that takes in the json instance named contents
+    gui = UI.UI(contents, None)  # 5.(g)
     # start the gui
     logging.INFO(" GUI starts!")
     gui.show()
     app.exec_()
     logging.INFO(" GUI ends!")
-
 
     """The rest below is not relevant to lab 6"""
     # data is a dictionary loaded from the ”movie_posters” field of json data
