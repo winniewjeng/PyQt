@@ -11,10 +11,10 @@ import urllib.request
 class OpenMovie:
     """
         Author: Winnie Wei Jeng
-        Assignment: Week 5
+        Assignment: Week 6
         Professor: Phil Tracton
-        Date: 10/28/2018
-        OpenMovie class supplements the content for Test_OpenMovies to demonstrate nosetests
+        Date: 11/3/2018
+        OpenMovie class takes in a string title and a string url and return an image
     """
 
     # constructor:
@@ -49,4 +49,3 @@ class OpenMovie:
             traceback.print_exception(exc_type, exc_value, exc_traceback, limit=2, file=sys.stdout)
             logging.error("*** tb_lineno: {}".format(exc_traceback.tb_lineno))
             return False
-    

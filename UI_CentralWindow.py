@@ -1,9 +1,8 @@
 import PyQt5
 import PyQt5.QtWidgets
-import PyQt5.QtGui  # !? I need this
-import PyQt5.QtCore  # !? I need this
+import PyQt5.QtGui
+import PyQt5.QtCore
 import UI_MovieInfo
-import sys
 
 
 # 7. no logic done here
@@ -126,8 +125,6 @@ class UI_CentralWindow(PyQt5.QtWidgets.QDialog):
         self.vbox.addLayout(self.hboxSearch)
         self.vbox.addLayout(self.hboxInfoAndPoster)
 
-
-
         # setLayout to vbox
         self.setLayout(self.vbox)
 
@@ -147,12 +144,5 @@ class UI_CentralWindow(PyQt5.QtWidgets.QDialog):
 
         # for posterLabel, set scaled content to false
         self.posterLabel.setScaledContents(False)
-
-
-if __name__ == "__main__":
-    app = PyQt5.QtWidgets.QApplication(sys.argv)
-    gui = UI_CentralWindow()
-    gui.show()
-    app.exec_()
 
 

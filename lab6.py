@@ -1,20 +1,18 @@
 import OpenMovie
-# from OpenMovie import *
 import configparser
 import logging
 import sys
 import json
-# import PyQt5
 import PyQt5.QtWidgets
 import UI
 
 """
 File: Jeng_Winnie_Lab6.py
-
 Author: Winnie Wei Jeng
 Assignment: Lab 6
 Professor: Phil Tracton
-Date: 
+Date: 11/3/2018
+Description: This simple GUI pulls up movie poster's image upon entering in the movie title
 
 """
 
@@ -37,7 +35,7 @@ if __name__ == "__main__":
     else:
         log_file_name = "default.log"
 
-        # create a logging basiConfig
+    # create a logging basiConfig
     logging.basicConfig(filename=log_file_name, level=logging.DEBUG,
                         format='%(asctime)s,%(message)s',
                         datefmt='%m/%d/%Y %I:%M:%S %p')
@@ -59,8 +57,6 @@ if __name__ == "__main__":
     app = PyQt5.QtWidgets.QApplication(sys.argv)
     # gui is an instance of UI that takes in the json instance named contents
     gui = UI.UI(moviesJSON=contents)  # 5.(g)
-    # logging.INFO(" GUI starts!")
-    gui.show()
     app.exec_()
     logging.INFO(" GUI ends!")
 
@@ -69,9 +65,6 @@ if __name__ == "__main__":
     data = json.load(contents)
 
     """test code to print out the data dictionary of json objects """
-    # print(data['movie_posters'])
-    # for i in data['movie_posters']:
-    #     print(i, data['movie_posters'][i])
 
     # for each item in this dictionary, create an instance of OpenMovie,
     #  using the key for the title and the value for the posterURL call the getPoster method

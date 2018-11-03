@@ -15,15 +15,12 @@ class UI(PyQt5.QtWidgets.QMainWindow):
     """
 
     def __init__(self, moviesJSON=None, parent=None):
-        # self.count = 0  # check if buttons work
+        # self.count = 0  # keep for purpose of testing button
         # moviesJSON in the JSON instance from lab6.py
-        super(UI, self).__init__(parent)  # no inheriting moviesJSON because why?
+        super(UI, self).__init__(parent)
 
         # store the input moviesJSON in a class member of the same name
         self.moviesJSON = moviesJSON
-
-        ## added myself--to be deleted if
-        # self.movieTitle = None
 
         # set the window title
         self.setWindowTitle("Python Movie Project")
@@ -31,14 +28,8 @@ class UI(PyQt5.QtWidgets.QMainWindow):
         # set the status bar's message
         self.statusBar().showMessage("Status Bar")  # ? 8-(d)-4
 
-        # self.a = PyQt5.QtWidgets.QStatusBar.showMessage("StatusBar")
-        # self.setStatusBar(QStatusBar=PyQt5.QtWidgets.QStatusBar.showMessage("StatusBar"))
-        # self.setStatusBar(PyQt5.QtWidgets.QStatusBar.showMessage("Status Bar"))
-        # self.setStatusBar(QStatusBar)  # ? 8-(d)-4
-
         # 8-(d)-v
         # class member centralWidget is an instance of UI_CentralWindow
-        # this instance....cause the Debugger to complain...
         self.centralWidget = UI_CentralWindow.UI_CentralWindow()
 
         """connect the PushButton from our central widget to a handler"""
@@ -51,8 +42,7 @@ class UI(PyQt5.QtWidgets.QMainWindow):
     # when the enterMovie button is triggered...
     def enterMoviePushButtonClicked(self):
         # read the movieTitle from enterMovieLineEdit with text() method
-        # movieTitle = UI_CentralWindow.UI_CentralWindow.enterMovieLineEdit.text()  # not sure if this is correct...
-        self.movieTitle = self.centralWidget.enterMovieLineEdit.text()  # not sure if this is correct...
+        self.movieTitle = self.centralWidget.enterMovieLineEdit.text()
 
         print(self.movieTitle)
         # print("Button click %d" % self.count)
@@ -72,14 +62,10 @@ class UI(PyQt5.QtWidgets.QMainWindow):
 
         # check if movieTitle is in json data "movie_posters" list of keys
         for i in data['movie_posters']:
-            # self.count = self.count + 1
-            # i is the movieTitle, which is a key
-            print("self.movieTitle is {} and i is {} ".format(self.movieTitle, i))
-            print(i)
+            # self.count = self.count + 1  # keep for purpose of testing button
             if self.movieTitle == i:
                 # i is self.movieTite and data['movie_posters'][i] is URL
                 instance = OpenMovie.OpenMovie(i, data['movie_posters'][i])
-                print("oh hihi")
                 if instance.getPoster() is False:
                     return
                 else:
@@ -88,15 +74,6 @@ class UI(PyQt5.QtWidgets.QMainWindow):
                 pass
 
         contents.close()
-
-
-if __name__ == "__main__":
-    app = PyQt5.QtWidgets.QApplication(sys.argv)
-    gui = UI()
-    # gui.show()
-    app.exec_()
-
-
 
 
 

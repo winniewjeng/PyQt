@@ -1,7 +1,6 @@
 import PyQt5
 import PyQt5.QtWidgets
-import PyQt5.QtGui  # !? I think I need this ?!
-import sys
+import PyQt5.QtGui
 
 # 6
 class UI_MovieInfo(PyQt5.QtWidgets.QDialog):
@@ -29,15 +28,5 @@ class UI_MovieInfo(PyQt5.QtWidgets.QDialog):
         self.hBox.addWidget(self.titleLabel)
         self.hBox.addWidget(self.infoLabel)
 
-        # # set the layout --- NOOOOO! THIS CODE BREAKS bc I setLayout in UI_CentralWindowClass too
-        # self.setLayout(self.hBox)
-
     def getLayout(self):  # (d)
         return self.hBox
-
-
-if __name__ == "__main__":
-    app = PyQt5.QtWidgets.QApplication(sys.argv)
-    gui = UI_MovieInfo()
-    gui.show()
-    app.exec_()
