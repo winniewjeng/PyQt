@@ -37,7 +37,7 @@ class UI(PyQt5.QtWidgets.QMainWindow):
         """connect the PushButton from our central widget to a handler"""
         # 8-(d)-vi
         # not sure if this is done correctly
-        self.button = UI_CentralWindow.UI_CentralWindow.enterMoviePushButton()
+        self.button = UI_CentralWindow.UI_CentralWindow.enterMoviePushButton
         self.button.clicked.connect(self.enterMoviePushButtonClicked)  # 7-(d)-vi
 
         # show the UI
@@ -78,6 +78,7 @@ class UI(PyQt5.QtWidgets.QMainWindow):
                 return
 
         contents.close()
+
 
 if __name__ == "__main__":
     app = PyQt5.QtWidgets.QApplication(sys.argv)

@@ -29,8 +29,8 @@ class UI_MovieInfo(PyQt5.QtWidgets.QDialog):
         self.hBox.addWidget(self.infoLabel)
         self.hBox.addWidget(self.titleLabel)
 
-        # set the layout
-        self.setLayout(self.hBox)
+        # # set the layout --- NOOOOO! THIS CODE BREAKS bc I setLayout in UI_CentralWindowClass too
+        # self.setLayout(self.hBox)
 
     def getLayout(self):  # (d)
         return self.hBox
