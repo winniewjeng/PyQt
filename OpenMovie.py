@@ -40,7 +40,7 @@ class OpenMovie:
 
         # substitute every symbol and spaces in title with underline
         re.sub(r"[^a-zA-Z0-9]", "_", self.title)
-        self.posterFileName = "Posters/%s" % self.title
+        self.posterFileName = "Posters/%s.jpg" % self.title
         try:
             urllib.request.urlretrieve(self.posterURL, self.posterFileName)
             return True

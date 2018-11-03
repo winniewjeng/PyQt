@@ -49,6 +49,7 @@ if __name__ == "__main__":
         contents = open('movies.json', 'r')
         print(" Opened the JSON file!")
         logging.info(" Opened the JSON file!")
+
     except:
         print("Failed to open JSON file")
         logging.error("Failed to open JSON file")
@@ -57,14 +58,8 @@ if __name__ == "__main__":
     # app is a PyQT5 QApplication instance
     app = PyQt5.QtWidgets.QApplication(sys.argv)
     # gui is an instance of UI that takes in the json instance named contents
-    # gui = UI.UI(moviesJSON=contents)  # 5.(g)
-    # gui = UI.UI(contents)  # 5.(g)
-    # gui = UI.UI.moviesJSON(contents)
-    # UI.UI.moviesJSON = contents
-
-    gui = UI.UI(contents)
-    # start the gui
-    logging.INFO(" GUI starts!")
+    gui = UI.UI(moviesJSON=contents)  # 5.(g)
+    # logging.INFO(" GUI starts!")
     gui.show()
     app.exec_()
     logging.INFO(" GUI ends!")

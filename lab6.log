@@ -1729,3 +1729,39 @@ urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certifica
 11/02/2018 03:28:26 PM, Opened the JSON file!
 11/02/2018 03:28:39 PM, lab6.log opens. Program starts.
 11/02/2018 03:28:39 PM, Opened the JSON file!
+11/03/2018 10:39:32 AM, lab6.log opens. Program starts.
+11/03/2018 10:39:32 AM, Opened the JSON file!
+11/03/2018 11:57:40 AM, lab6.log opens. Program starts.
+11/03/2018 11:57:40 AM, Opened the JSON file!
+11/03/2018 11:58:08 AM, lab6.log opens. Program starts.
+11/03/2018 11:58:08 AM, Opened the JSON file!
+11/03/2018 11:58:21 AM, lab6.log opens. Program starts.
+11/03/2018 11:58:21 AM, Opened the JSON file!
+11/03/2018 11:58:42 AM, lab6.log opens. Program starts.
+11/03/2018 11:58:42 AM, Opened the JSON file!
+11/03/2018 12:01:09 PM, lab6.log opens. Program starts.
+11/03/2018 12:01:09 PM, Opened the JSON file!
+11/03/2018 12:01:37 PM, lab6.log opens. Program starts.
+11/03/2018 12:01:37 PM, Opened the JSON file!
+11/03/2018 12:02:04 PM, lab6.log opens. Program starts.
+11/03/2018 12:02:04 PM, Opened the JSON file!
+11/03/2018 12:02:31 PM, lab6.log opens. Program starts.
+11/03/2018 12:02:31 PM, Opened the JSON file!
+11/03/2018 02:17:25 PM, lab6.log opens. Program starts.
+11/03/2018 02:17:25 PM, Opened the JSON file!
+11/03/2018 02:17:48 PM, lab6.log opens. Program starts.
+11/03/2018 02:17:48 PM, Opened the JSON file!
+11/03/2018 02:17:53 PM, getPoster() method is called
+11/03/2018 02:17:53 PM, Poster's name: Avatar
+11/03/2018 02:17:53 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg
+11/03/2018 02:21:48 PM, lab6.log opens. Program starts.
+11/03/2018 02:21:48 PM, Opened the JSON file!
+11/03/2018 02:21:58 PM, getPoster() method is called
+11/03/2018 02:21:58 PM, Poster's name: Avatar
+11/03/2018 02:21:58 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg
+11/03/2018 02:22:02 PM, getPoster() method is called
+11/03/2018 02:22:02 PM, Poster's name: Iron Man
+11/03/2018 02:22:02 PM, Poster's URL https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg
+11/03/2018 02:22:10 PM, getPoster() method is called
+11/03/2018 02:22:10 PM, Poster's name: Clerks
+11/03/2018 02:22:10 PM, Poster's URL https://ia.media-imdb.com/images/M/MV5BNzE1Njk0NmItNDhlMC00ZmFlLWI4ZTUtYTY4ZjgzNjkyMTU1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg

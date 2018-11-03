@@ -16,23 +16,24 @@ class UI_CentralWindow(PyQt5.QtWidgets.QDialog):
 
         # enterMovieLabel is a QLabel
         self.enterMovieLabel = PyQt5.QtWidgets.QLabel("Movie to Look Up")
+
         # entermovieLineEdit is a QLineEdit (an empty text field holder basically)
         self.enterMovieLineEdit = PyQt5.QtWidgets.QLineEdit()
+
         # enterMoviePush Button is a QPushButton
         self.enterMoviePushButton = PyQt5.QtWidgets.QPushButton("Look Up Movie")
 
         # posterLabel is a QLabel
         self.posterLabel = PyQt5.QtWidgets.QLabel("Poster Goes Here")
 
-        # pixmap is a class member of QPixmap
-        self.pixmap = PyQt5.QtGui.QPixmap()  # erroneous????????????????
-        # https://pythonspot.com/pyqt5-image/
-        self.posterLabel.setPixmap(self.pixmap)
+        # pixmap is a class member of QPixmap   https://pythonspot.com/pyqt5-image/
+        self.pixmap = PyQt5.QtGui.QPixmap()
 
         # awardsDisplay is a class member of QTextEdit
         self.awardsDisplay = PyQt5.QtWidgets.QTextEdit()
         # awardsDisplay calls setReadOnly() method and evals to True
         self.awardsDisplay.setReadOnly(True)
+        self.awardsDisplay.show()
 
         # vboxInfo is a VBox
         self.vboxInfo = PyQt5.QtWidgets.QVBoxLayout()
@@ -99,7 +100,7 @@ class UI_CentralWindow(PyQt5.QtWidgets.QDialog):
         # likewise, add to hboxInfo4
         self.hboxInfo4.addLayout(self.monthlyRevenueMeanInformation.getLayout())
         self.hboxInfo4.addLayout(self.monthlyRevenueMedianInformation.getLayout())
-        self.hboxInfo4.addLayout(self.monthlyRevenueMeanInformation.getLayout())
+        self.hboxInfo4.addLayout(self.monthlyRevenueStdInformation.getLayout())
 
         # likewise, add to hboxInfo5
         self.hboxInfo5.addLayout(self.annualRevenueMeanInformation.getLayout())
@@ -125,18 +126,25 @@ class UI_CentralWindow(PyQt5.QtWidgets.QDialog):
         self.vbox.addLayout(self.hboxSearch)
         self.vbox.addLayout(self.hboxInfoAndPoster)
 
+
+
         # setLayout to vbox
         self.setLayout(self.vbox)
 
-    # 7-(d)
+    # 7-(d) update poster upon click button Look up moive?
     def updatePoster(self, posterFileName=None):
+
         """This moethod loads the specified poster name into the GUI"""
+
         # load the posterFileName instance into pixmap
-        self.pixmap.load(posterFileName)  # ? 7-(d)-i
+        self.pixmap.load(posterFileName)  # ? 7-(d)-i something /Poster/img_name.jpg
+
         # scaled the pixmap image via scaled() method using posterLabel size and KeepAspectRatio
         self.pixmap.scaled(self.posterLabel.width(), self.posterLabel.height(), PyQt5.QtCore.Qt.KeepAspectRatio)
+
         # call setPixmap of the posterLabel with pixmap
-        self.posterLabel.setPixmap(self.pixmap) # what does it even mean dude?
+        self.posterLabel.setPixmap(self.pixmap)  # what does it mean?
+
         # for posterLabel, set scaled content to false
         self.posterLabel.setScaledContents(False)
 
